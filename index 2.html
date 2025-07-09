@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Samiha's Book Corner</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+</a>
+<body>
+  <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+</div>
+  <a href="https://www.google.com" target="_blank">
+  <button>Click Me</button>
+  <h1 class="rainbow">Samiha's Book Corner</h1>
+<h2>Welcome to my Bookish World 📚✨</h2>
+    <p>This is my very first website. Here I will share my reading journey and the review of some books.</p>
+    <p>“Reading is a meditation of mental health.” 🌸</p>
+  <img src="book.jpeg" alt="Books" width="300">
+  <!-- Floating Contact Button -->
+   
+<button class="contact-float-btn" onclick="toggleContactForm()">Contact</button>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+<!-- Hidden Contact Form -->
+<div class="contact-popup" id="contactPopup">
+  <form>
+    <h2>💌 Contact Me</h2>
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br><br>
+    <textarea placeholder="Your Message" required></textarea><br><br>
+    <button type="submit">Send</button>
+    <button type="button" onclick="toggleContactForm()" class="close-btn">Close</button>
+  </form>
+</div>
+<script>
+  function toggleContactForm() {
+    const form = document.getElementById("contactPopup");
+    form.style.display = form.style.display === "block" ? "none" : "block";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body {
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: pink;
+  color: white;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+  color: purple;
+  font-size: 40px;
+  animation: fadeSlide 1s ease-in-out forwards;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: fadeSlide 1s ease-in-out forwards;
+}
+
+p {
+  color: darkblue;
+  font-size: 18px;
+}
+img {
+  border-radius: 20px;
+}
+button {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: deeppink;
+  transform: scale(1.05);
+}
+
+.navbar {
+  background-color: #ffe6f0;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.navbar a {
+  text-decoration: none;
+  color: deeppink;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  background-color: pink;
+  color: white;
+}
+body {
+  font-family: 'Dancing Script', cursive;
+}
+.rainbow {
+  background: linear-gradient(to right, pink, violet, skyblue, lightgreen, gold);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 3s infinite linear;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+form {
+  margin-top: 30px;
+}
+
+input, textarea {
+  width: 70%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: deeppink;
+  transform: scale(1.05);
+}
+.contact-box {
+  background-color: rgba(255, 240, 250, 0.9); /* Soft pink box */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto; /* center it */
+  text-align: center;
+}
+/* Floating Button */
+.contact-float-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: hotpink;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Popup Form */
+.contact-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  background-color: #fff0fa;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 1001;
+  width: 300px;
+  text-align: center;
+}
+
+.contact-popup form input,
+.contact-popup form textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact-popup form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.contact-popup button {
+  background-color: deeppink;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-popup .close-btn {
+  background-color: gray;
+}
